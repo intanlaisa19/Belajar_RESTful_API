@@ -13,4 +13,9 @@
    c. CORBA
    d. RESTful API dll
 
+5. REST (REpresentational State Transfer) API
+-> salah satu implementasi API yang memanfaatkan HTTP sebagai protocol komunikasinya, walaupun SOAP juga berjalan diatas HTTP, namun RESTful API sangat sederhana dibanding SOAP. Saat ini RESTful API sudah menjadi standarisasi API yang banyak digunakan ketika kita membuat sistem yang butuh menyediakan API untuk pihak lain.
+
+
+
 

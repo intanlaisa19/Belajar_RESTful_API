@@ -16,3 +16,5 @@
    f. code on demand
    -> mengembalikan script yang bisa dieksekusi oleh client jika diperlukan. misal server mengembalikan kode javascript yang akan di eksekusi oleh client web atau mengembalikan laayout xml untuk di render oleh aplikasi android, code demond ini design principal yang tidak wajib diimplementasikan ketika kita membuat restful api.
 
+3. Design Principal ini adalah panduan jika kita ingin membuat RESTful API yang baik, namun juga ada yang membuat tidak sesuai dengan design ini sehingga restful api kita tidak bisa dibilang "truly restful api"
+

@@ -1,0 +1,9 @@
+1. Documentation 
+-> bisa dibuat menggunakan apapun, dari dokumen sederhana menggunakan microsoft word, google doc, sampai menggunakan tool khusus untuk dokumentasi API, tetapi yang disarankan yaitu menggunakan tool khusus.
+Contoh API document :
+  a. swagger
+  b. stoplight
+  c. redoc dll
+
+2. OpenAPI
+-> spesifikasi yanag banyak diadopsi oleh industri untuk mendeskripsikan API

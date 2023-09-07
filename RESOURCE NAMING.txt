@@ -1,0 +1,22 @@
+1. Resource Naming
+-> banyak orang yang asal pembuatan dalam URL untuk restful api, walaupun tidak ada standar baku nya, tetapi alangkah baik nya mengikuti best practice yang ada.
+   hubungan antara resource naming dengan url ini karna restful api ini basisnya http, jadi alamat tiap resource atau tiap API menggunakan URL. dan biasanya dalam restful api itu  tiap url mempresentasikan tiap resource.
+
+2. Resource
+-> data yang sifatnya bisa satu atau banyak. Contoh : customers adalah kumpulan dari customer, dimana customer adalah satu data yang memrepresentasikan customer.
+
+3. contoh url yang benar
+-> a. gunakan kata benda, bukan kata kerja. Contoh benar : http://api.example.com/product
+                                                     salah : http://api.example.com/get-all-product
+   b. gunakan hiraraki. Contoh benar : http://api.example.com/products/{productsId}/images
+                               salah : http://api.example.com/product-images/{productId}
+   c. gunakan action pada resource. Contoh benar : http://api.example.com/users/login
+                                           salah : http://api.example.com/login-user
+   d. gunakan - dan lowercase. Contoh benar : http://api.example.com/products/{productId}/warehouse-locations
+                                      salah : http://api.example.com/products/{productId}/warehouse_locations
+   e. gunakan CRUD pada HTTP Resource. Contoh benar : GET http://api.example.com/products/{productId}
+                                              salah : GET http://api.example.com/get-products-by-id/{productId}
+   f. gunakan query untuk filter. Contoh benar : http://api.example.com/products?name=Indomie
+                                         salah : http://api.example.com/products/filter-by-name/{name}
+
+

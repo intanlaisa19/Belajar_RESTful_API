@@ -1,0 +1,4 @@
+1. Versioning
+-> memberi tahu bahwa kita memiliki banyak versi terhadap aplikasi RESTful API.saat membuata RESTful API, usahakan tidak pernah merusak kompatibilitas tiap kita melakukan upgrade. Versioning hanya diperlukan ketika kita memang perlu merusak kompatibilitas RESTful API.
+Contoh : http://api.example.com/v1/products
+

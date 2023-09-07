@@ -1,0 +1,51 @@
+1. Kesalahan saat membuat restful api
+-> a. selalu membuat CRUD API untuk table di database
+   b. membuat response data sama dengan table di database
+   c. membuat api terlebih dahulu, baru mengerjakan web atau mobile menggunakan api yang sudah dibuat
+   d. mengembalikan data selengkap-lengkapnya di API
+   e. membuat api yang tidak dibutuhkan oleh client
+
+Contoh RESTful API Shopping Cart 
+a. Alur business Flow
+- Customer menambahkan barang ke keranjang, bisa lebih dari satu barang
+- Customer membuka halaman keranjang, bisa mengubah data quantity barang
+- Customer memasukkan alamat pengiriman
+- Customer menekan tombol order untuk membuat order
+
+b. screen
+-product detail -> shopping cart -> shipping address -> order detail
+
+c. API Doc
+*Product Detail
+-> GET /products/{productId}
+-> POST /carts
+
+* Shopping cart
+-> GET /carts
+-> PATCH /carts/products
+-> PATCH /carts/products/{productId}
+
+* Shipping Address
+-> GET /address
+-> POST /address
+-> PUT /carts/addresses
+-> POST /orders
+
+* Order Detail
+-> GET /orders/{orderId}
+
+2. Maintenance RESTful API
+-> Dalam membuat produk, fitur pasti akan selalu bertambah, dan tak jarang kita mungkin melakukan perubahan di screen web atau mobile yang sama, oleh karena itu ia sangat penting agar tidak terjaadi kesalahan pada restful api di kemudian hari
+
+3. Maintenance yang boleh di lakukan
+a. menambah data baru di api yang sudah ada
+b. menambah api baru di endpoint url berbeda
+c. mempercepat proses di api yang sudah ada
+d. menggabungkan beberapa api menjadi satu, tanpa menghilangkan api lama
+
+
+
+
+
+
+

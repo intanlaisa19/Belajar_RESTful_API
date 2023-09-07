@@ -1,0 +1,17 @@
+1. Content Negotiation
+-> saat membuat web menggunakan http, maka biasanya content(body) yang akan kita gunakan akan menggunakan html. Pada restful api pun untuk berkomunikasi antara client dan server biasanya menggunakan body. body content yang  biasa digunakan restful api seperti JSON, XML dll
+
+2. HTTP Headers
+-> standard http header yaitu Accept dan Content Type.
+   Accept digunakan untuk memberi tahu server, tentang tipe data yang diterima oleh client
+   content-type digunakan untuk memberi tahu server, tipe data apa yang dikirim oleh client.
+
+3. JSON (Javascript Object Notation)
+-> tipe data object pada javascript
+   JSON sangat populer digunakan dalam pembuatan RESTful API saat ini. JSON tidak hanya mudah dibuat dalam js, namun hampir disemua bahasa pemrograman. menggunakan JSON jika tidak dibuat dengan baik bisa terlalu liar, karena bisa dibuat sesuka kita, maka disarankan untuk membuat standard request dan response agar tidak membingungkan ketika menggunakan RESTful API yang kita buat. Response JSON yang dinamis akan sangat menyulitkan client terutama yang menggunakan bahasa pemrograman static typed.
+
+4. Response Status
+-> selalu gunakan response status yang sesuai standarisasi http. Contoh : a. jika sukses, gunakan response status 2xx
+                                                                          b. jika data yang dikirim client tidak valid, gunakan 4xx
+                                                                          c. jika terjadi masalah di server, gunakan 5xx
+

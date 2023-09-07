@@ -1,0 +1,11 @@
+1. Cache
+-> data bersifat sementara yang disimpan pada sistem penyimpanan, data cahce dlm restful api biasanya disimpan di client. Cache biasa digunakan untuk menurunkan jumlah data transfer antara client dan server sehingga proses komunikasi lebih cepat
+
+2. HTTP Header Response ETag
+-> digunakan untuk menambah informasi terhadap resource yang dikembalikan di server. ETag berisikan versi dari resource yang di minta, misal = ETag: "33a64df551425fcc55e4d42a148795d9f25f89d4"
+
+3. HTTP Header Request if-not-match
+-> Setelah client menyimpan data cache, setiap client mengirim request ke server, client menambahkan HTTP Header if-not-match, HTTP Header if-not-match ini berisikan data ETag sebelumnya. jika data tidak berubah maka server akan mengembalikan HTTP response code 304 : not modified
+
+contoh : if-none-match: "33a64df551425fcc55e4d42a148795d9f26f89d4
+

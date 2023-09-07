@@ -1,0 +1,18 @@
+1. Architectural Constraints
+-> Rest merupakan architectural pattern yang dikenalkan oleh Roy Fielding tahun 2000. REST didesain berjalan menggunakan HTTP, dan sering digunakan sebagai Web Services, dan terdapat design principal saat kita akan membuat REST.
+
+2. Design Principal agar web services benar-benar sesuai RESTful API
+-> a. client-server
+   -> design pertama, restful api harus memisahkan antara kompleksitas data internal dengan yang akan di ekspose ke client, design ini membuat client tidak perlu tahu kompleksitas logic yang terjadi di server.
+   b. stateless
+   -> interaksi nya harus independen, dan setiap informasi harus mengirimkan seluruh informasi yang di butuhkan. 
+   c. cacheable
+   -> bisa melakukan cache data di local, sehingga tidak perlu selalu meminta data terbaru dari server
+   d. uniform interface
+   -> penggunaan antarmuka komunikasi yang seragam untuk semua pihak (client & server teknologi manapun), karena RESTful API menggunakan teknologi HTTP yang sudah standard sehingga seragam disemua teknologi atau bahasa pemrograman
+      data yang diekspose di RESTful API juga harus bersifat general, agar di API data nya tidak berpengatuh setelah di ubah.
+   e. layered system
+   -> menjadikan sistem bisa disusun sesuai dengan datanya, agar kompleksitas pada RESTful API tidak harus diketahui oleh client. Layer juga bisa digunakan untuk melakukan enkapsulasi aplikasi lama yang tidak memiliki kemampuan RESTful API, atau menjadi load balancer untuk restful api lain.
+   f. code on demand
+   -> mengembalikan script yang bisa dieksekusi oleh client jika diperlukan. misal server mengembalikan kode javascript yang akan di eksekusi oleh client web atau mengembalikan laayout xml untuk di render oleh aplikasi android, code demond ini design principal yang tidak wajib diimplementasikan ketika kita membuat restful api.
+

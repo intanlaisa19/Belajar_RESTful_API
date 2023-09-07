@@ -1,0 +1,16 @@
+1. Security
+-> untuk mengamankan atau membatasi jumlah user yang boleh mengakses RESTful API yang dibuat adalah dengan cara Authentication dan Authorization.
+
+2. Authentication
+-> a. memvalidasi kredensial untuk memverifikasi pemilik identitas. Contoh proses login menggunakan username dan password dll
+
+3. Authorization
+-> a. proses yang dilakukan setelah proses authentication. gunanya memvalidasi apakah pemilik identitas memiliki hak akses untuk mengakses resource yang di minta. Contoh Access-Control List, dan banyak yang lainnya.
+
+Contoh authentication dan authorization
+a. basic auth
+-> authentication sederhana menggunakan username dan password
+b. api-key
+-> cukup menggunakan header sesuai dengan yang diinginkan dan value berisi api-key atau secret key
+c. oauth 2
+-> ini merupakan mekanisme authentication yang saat ini sangat populer dan banyak digunakan untuk integrasi antara aplikasi mobile dan serverd4'4=c

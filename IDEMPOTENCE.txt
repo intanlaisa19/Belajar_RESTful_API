@@ -1,0 +1,20 @@
+1. Idempotent
+-> ketika membuat multiple request yang identik, harus memiliki efek yang sama seperti membuat satu request. dalam hal ini, maka RESTful API kita bisa dibilang idempotent.
+   Idempotent itu sangat penting karena kita akan melakukan komunikasi antara client dan server via network, sehingga error bisa terjadi.
+
+2. Implementasi idempotent di restful api harus sesuai dengan kaidah http method yang standar, secara otomatis sebenarnya kita sudah melakukan proses idempotent
+
+3. idempotent di http method
+   a. post
+   -> kita tidak perlu membuat api nya menjadi idempotent. request berkali-kali menggunakan post dengan kata yang sama akan selalu membuat record baru. Namun, implementasi post pada idempotent tidak wajib.
+  b. get
+   -> tidak pernah mengubah data di server. method get hanya digunakan untuk mengambil data yang ada di server. jadi, mengirim request berkali-kali di get tidak akan mengubah data apapun di server, sehingga get secara default sudah idempotent.
+  c. put & patch
+   -> digunakn untuk mengubah data yang sudah ada. jika kita mengirim request put and patch berkali-kali dengan data yang sama, maka akan mengubah server akn melakukan proses upadate data berkali-kali dengan data yang sama.
+      Request pertama akan mengubah data di database, request selanjutnya hanya akan mengubah data request data request yang pertama, sehingga hasil akhirnya tetap sama.
+  d. delete 
+   -> untuk menghapus data di server. Ketika mengirim request delete berkali-kali ke server, maka response nya mungkin akan beda. Response pertama mungkin akan 200 OK atau 204 No Content. selanjutnya request akan mengembalikan response 404 nit found, karena datanya sudah terhapus pada request pertama.
+
+
+
+

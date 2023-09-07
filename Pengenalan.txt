@@ -1,0 +1,16 @@
+1. API (Application Programming Interface)
+-> perantara yang menghubungkan satu pihak dengan pihak lain agar bisa saling berkomunikasi. API berisi kumpulan prosedur, fungsi, cara berkomunikasi atau peralatan untuk komunikasi.
+
+2. Pihak yang terlibat dalam API bisa dalam bentuk perangkat lunak ataaupun perangkat keras. API ini sebenarnya sama dengan Remote Procedure Invocation, hanya saja sekarang lebih populer istilah API dibanding RPI
+
+3. Contoh penggunaan API
+-> saat menggunakan sistem operasi, maka ia tidak bisa langsung berkomunikasi langsung dengan perangkat keras, SO membutuhkan API berupa driver yang perlu dipasang terlebih dahulu agar perangkat keras bisa terdeteksi oleh 
+   Contoh : saat berkomunikasi dengan facebook maka kita menggunakan API agar bisa berkomunikasi.
+
+4. Contoh implementasi API
+-> a. driver perangkat keras, sebagai API untuk SO
+   b. SOAP
+   c. CORBA
+   d. RESTful API dll
+
+

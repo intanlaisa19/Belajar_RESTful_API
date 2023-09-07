@@ -1,0 +1,9 @@
+1. ada 4 kategori seberapa sempurna restful api :
+-> a. level zero
+   -> one URl, one HTTP Method, contoh SOAP dan XML
+   b. level one
+   -> many URL, one HTTP Method, yang masih menggunakan ini biasanya web service versi lama biasanya menggunakan POST
+   c. level two
+   -> many URL, dan tiap url mendukung lebih dari satu jenis HTTP Method, ini kebanyakan yang digunakan oleh web service saat ini, misal url yang sama, menggunakan GET untuk mengambil data dan POST untuk menambahkan data
+   d. level three
+   -> hampir sama dengan level two, bedanya setiap resource akan memberikan detail relasi ke resource lainnya, atau sudah mengimplementasikan HATEOAS. level ini memang menyulitkan ketika di implementasikan, dan kebanyakan programmer hanya berhenti di level two. Dengan mengimplemetasikan HATEOAS, kita bisa dengan mydah mendapat URL resource ke relasi data yang kita butuhkan.

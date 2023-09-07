@@ -1,0 +1,4 @@
+1. Hateoas (hypermedia as the engine of application state. hypermedia artinya content yang memiliki link menuju resource yang ada.
+
+2. Keuntungan menggunakan
+-> biasanya URL API pada restfulapi sudah di hardcode di client dan client bisa secara dinamis mendapatkan URL lokasi resource dari response data server.

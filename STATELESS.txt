@@ -1,0 +1,6 @@
+1. Stateless 
+-> sederhananya tidak menyimpan state atau data. setiap request dari client ke server, harus berisikan semua informasi lengkap u=yang dibutuhkan oleh server. Stateless artinya setiap http request adalah proses independent, tidak bergantung dengan http request lainnya.
+
+2. keuntungan stateless restful api
+a. mudah di scaling secara horizontal , karena request dari client bisa masuk ke server mana saja, sehingga untuk scaling hanya tinggal menambah server baru.
+b.setiap request client sangat lengkap, sehingga mudah untuk di track dan di cek requestnya.
